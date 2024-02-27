@@ -1,0 +1,48 @@
+[
+  {
+    "ContainingType": "Auction.API.Controllers.AuctionController",
+    "Method": "GetCurrentAuction",
+    "RelativePath": "Auction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Auction.API.Entities.AuctionEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ]
+  },
+  {
+    "ContainingType": "Auction.API.Controllers.OfferController",
+    "Method": "CreateOffer",
+    "RelativePath": "Offer/{itemId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Auction.API.Communications.Requests.RequestCreateOfferJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
